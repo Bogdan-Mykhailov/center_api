@@ -1,15 +1,24 @@
 'use strict';
 
+type Gender = 'female' | 'male';
+
+type GroupType = 'aerial kids'
+  | 'dancing kids'
+  | 'aerial teens'
+  | 'dancing teens'
+  | 'aerial adults'
+  | 'dancing adults';
+
 export interface Mother {
   name: string;
   surname: string;
-  tel: string;
+  tel: number;
 }
 
 export interface Father {
   name: string;
   surname: string;
-  tel: string;
+  tel: number;
 }
 
 export interface Parents {
@@ -18,7 +27,7 @@ export interface Parents {
 }
 
 export interface Contacts {
-  tel: string;
+  tel: number;
 }
 
 export interface StudentType {
@@ -26,8 +35,8 @@ export interface StudentType {
   name: string;
   surname: string;
   age: number;
-  sex: string;
-  group: string;
+  sex: Gender;
+  group: GroupType;
   contacts: Contacts;
   parents: Parents;
 }

@@ -1,7 +1,7 @@
 'use strict';
 
 export interface Contacts {
-  tel: string;
+  tel: number;
 }
 
 export interface CoachType {
